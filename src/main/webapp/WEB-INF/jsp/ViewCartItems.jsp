@@ -49,7 +49,7 @@
 			<td> <a href="CustAddfood.jsp">Add Food items to cart</a></td></br>
 			<td rowspan=7 width="650"><h2></h2>
 				<table border="2" width="70%" cellpadding="2">
-				<tr><th>CartId</th><th>Type</th><th>Quantity</th><th>Size And Price</th><th>Order Date</th><th>Edit</th><th>Delete</th></tr> 
+				<tr><th>CartId</th><th>Type</th><th>quantity</th><th>Size And Price</th><th>Order Date</th><th>Edit</th><th>Delete</th></tr> 
 				<c:forEach var="Cart" items="${list}">   
    <tr>  
    <td>${Cart.id}</td>  
