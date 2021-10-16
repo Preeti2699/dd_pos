@@ -270,6 +270,17 @@ public class controller {
 		return "ViewCartItems";
 	}
 	
+	//modifycartdetails
+		@RequestMapping(value="/modifycartdetails/{CartID}")
+		public String modifycartdetails(Model model,@PathVariable String CartId) {
+			CartBean cb = new CartBean();
+			cb.setCartID(CartId);
+			model.addAttribute("modifycartdetails", cb);
+			return "modifycartdetails";
+		}
+	
+
+	
 
 	
 	
