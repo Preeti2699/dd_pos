@@ -270,6 +270,19 @@ public class controller {
 		return "ViewCartItems";
 	}
 	
+	
+	public boolean modifycartdetails(CartBean cb,dbutil db) {
+		try {
+			CartDAOClass cdao = new CartDAOClass();
+			cdao.setTemplate(db.getTemplate());
+			cdao.update(cb);
+			return true;
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
 
 	
 	
